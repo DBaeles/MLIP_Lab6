@@ -17,19 +17,19 @@ pipeline {
 
 
                 # TODO fill out the path to conda here
-                #conda init
+                conda activate mlip
 
                 # TODO Complete the command to run pytest
-                #python3 pytest
-
-                python3 -m venv mlip
-                source mlip/bin/activate
-                pip install pytest
-                pip install pandas
-                pip install numpy
-                pip install scikit-learn
                 pytest
-                deactivate
+
+                #python3 -m venv mlip
+                #source mlip/bin/activate
+                #pip install pytest
+                #pip install pandas
+                #pip install numpy
+                #pip install scikit-learn
+                #pytest
+                #deactivate
 
                 echo 'pytest not runned'
                 #exit 1 #comment this line after implementing Jenkinsfile
