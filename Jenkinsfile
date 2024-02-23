@@ -23,7 +23,7 @@ pipeline {
                 #python3 pytest
 
                 python3 -m venv mlip
-                source mlip/bin/activate/
+                source mlip/bin/activate
                 pip install pytest
                 pip install pandas
                 pip install numpy
